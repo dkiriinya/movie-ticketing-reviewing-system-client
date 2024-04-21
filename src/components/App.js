@@ -20,7 +20,12 @@ function App() {
     const fetchMovies = async () => {
         try {
             const url = '/movies';
-            const response = await fetch(url);
+            const response = await fetch(url, {
+                headers: {
+                  accept: 'application/json',
+                  'User-agent': 'learning app',
+                },
+            });
             const data = await response.json();
             setMovies(data);
             console.log(data)
