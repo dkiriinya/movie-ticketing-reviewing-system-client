@@ -20,12 +20,7 @@ function App() {
     const fetchMovies = async () => {
         try {
             const url = '/movies';
-            const response = await fetch(url, {
-                headers: {
-                    'Accept': "application/json",
-                    'Content-Type': "application/json",
-                },
-            });
+            const response = await fetch(url);
             const data = await response.json();
             setMovies(data);
             console.log(data)
