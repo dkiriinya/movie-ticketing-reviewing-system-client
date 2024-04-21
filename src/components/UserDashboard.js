@@ -200,6 +200,7 @@ export default function UserDashboard({ user }) {
               <div className="card">
                 <div className="card-body">
                   <h5>Title: {ticket.movie.title}</h5>
+                  <p className="card-text">Theatre: {ticket.theatre.name} || Location: {ticket.theatre.location}</p>
                   <p className="card-text">Quantity: {ticket.quantity}</p>
                   <p className="card-text">Price: {ticket.price}</p>
                   <p className="card-text">Purchase Date: {ticket.purchase_date}</p>

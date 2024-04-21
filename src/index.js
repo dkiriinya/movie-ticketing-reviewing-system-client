@@ -5,9 +5,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./index.css";
 import { BrowserRouter } from "react-router-dom/cjs/react-router-dom.min";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
   <BrowserRouter>
     <App />
-  </BrowserRouter>
+  </BrowserRouter>,
+  document.getElementById("root")
 );
