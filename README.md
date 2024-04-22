@@ -1,70 +1,122 @@
-# Getting Started with Create React App
+# Movie Booking App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This is a movie booking web application built using React. It allows users to sign up, login, view movie details, book tickets, and manage their bookings. Additionally, administrators can manage movies, theaters, and user accounts.
 
-In the project directory, you can run:
+To access the server side code, access through [server-side-github-repo](https://github.com/dkiriinya/movie-ticketing-reviewing-system-server.git)
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To run this project locally, follow these steps:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Clone the repository:
 
-### `npm test`
+```
+git clone <repository_url>
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navigate to the project directory:
 
-### `npm run build`
+```
+cd movie-booking-app
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Start the development server:
 
-### `npm run eject`
+```
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The application should now be running on `http://localhost:3000`.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- React: A JavaScript library for building user interfaces.
+- react-router-dom: Declarative routing for React.
+- Node.js: A JavaScript runtime environment.
+- Express.js: A web application framework for Node.js.
+- MongoDB: A NoSQL database.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Usage
 
-## Learn More
+### Sign Up
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Users can sign up for an account by navigating to the Sign Up page and providing their details.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Login
 
-### Code Splitting
+Registered users can log in to their account using their email and password.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Dashboard
 
-### Analyzing the Bundle Size
+Upon successful login, users are redirected to their dashboard where they can view their profile and manage their bookings.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Movies
 
-### Making a Progressive Web App
+Users can browse through a list of movies, view details, and book tickets for their preferred movies.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Admin Panel
 
-### Advanced Configuration
+Administrators have access to an admin panel where they can manage movies, theaters, and user accounts.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## File Structure
+```
+.
+├── LICENSE.md
+├── README.md
+├── package-lock.json
+├── package.json
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+└── src
+    ├── components
+    │   ├── Admin.js
+    │   ├── App.js
+    │   ├── ComingSoon.js
+    │   ├── Forms.js
+    │   ├── Home.js
+    │   ├── Login.js
+    │   ├── MovieDetails.js
+    │   ├── Movies.js
+    │   ├── Navbar.js
+    │   ├── NowShowing.js
+    │   ├── SignUp.js
+    │   ├── Theaters.js
+    │   ├── TheatreDetails.js
+    │   └── UserDashboard.js
+    ├── index.css
+    ├── index.js
+    └── styles
+        └── Movies.css
+```
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## API Integration
 
-### `npm run build` fails to minify
+The application integrates with a backend API to fetch movie data, user authentication, and session management.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributors
+
+- [Don Gitonga](https://github.com/dkiriinya)
+- [Irene Jay](https://github.com/irenejay)
+- [Eliab Karan](https://github.com/karaneliab)
+- [Evalyne Nyakio](https://github.com/Nyakio-Eva)
+- [Rachael Njoki](https://github.com/Rayken20)
+
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/license/mit) file for details.
