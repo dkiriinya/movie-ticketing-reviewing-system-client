@@ -13,13 +13,13 @@ To run this project locally, follow these steps:
 1. Clone the repository:
 
 ```
-git clone <repository_url>
+git clone https://github.com/dkiriinya/movie-ticketing-reviewing-system-client.git
 ```
 
 2. Navigate to the project directory:
 
 ```
-cd movie-booking-app
+cd movie-ticketing-reviewing-system-client
 ```
 
 3. Install dependencies:
@@ -41,8 +41,7 @@ The application should now be running on `http://localhost:3000`.
 - React: A JavaScript library for building user interfaces.
 - react-router-dom: Declarative routing for React.
 - Node.js: A JavaScript runtime environment.
-- Express.js: A web application framework for Node.js.
-- MongoDB: A NoSQL database.
+
 
 ## Usage
 

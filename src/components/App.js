@@ -11,6 +11,7 @@ import NowShowing from "./NowShowing";
 import ComingSoon from "./ComingSoon";
 import Theaters from "./Theaters";
 import TheatreDetails from "./TheatreDetails";
+import NotFound from "./NotFound";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -64,6 +65,9 @@ function App() {
           <Route path="/login">
             <Login setUser={setUser} />
           </Route>
+          <Route path="/not-found">
+            <NotFound />
+          </Route>
           <Route path="/dashboard">
             <UserDashboard user={user} /> 
           </Route>
@@ -71,7 +75,7 @@ function App() {
             <MovieDetails user={user}/>
           </Route>
           <Route path="/admin">
-            <Admin />
+            <Admin user={user}/>
           </Route>
           <Route path="/now-showing">
              <NowShowing  movies={movies}/>

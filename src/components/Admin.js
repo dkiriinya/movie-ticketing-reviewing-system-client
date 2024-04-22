@@ -1,8 +1,20 @@
-// admin.js
+import React, { useState, useEffect } from "react";
+import { useHistory } from "react-router-dom"; // Assuming you're using React Router
 
-import React, { useState } from "react";
+export default function Admin({ user }) {
+  const history = useHistory();
+  const [isAdmin, setIsAdmin] = useState(false);
 
-export default function Admin() {
+  useEffect(() => {
+    // Check if user is admin
+    if (user && user.username === "admin") {
+      setIsAdmin(true);
+    } else {
+      // Redirect to 404 page if not admin
+      history.push("/not-found");
+    }
+  }, [user, history]);
+
   const genre_list = [
     "Action", "Comedy", "Drama", "Thriller", "Horror", "Romance", "Sci-Fi",
     "Crime", "Adventure", "Narrative", "Fantasy", "Documentary", "Musical",
@@ -54,6 +66,11 @@ export default function Admin() {
       alert("Error adding movie. Please try again later.");
     }
   };
+
+  if (!isAdmin) {
+    // Render nothing if user is not admin
+    return null;
+  }
 
   return (
     <div className="container">
