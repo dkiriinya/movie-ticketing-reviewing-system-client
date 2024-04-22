@@ -4,7 +4,12 @@
 
 This is a movie booking web application built using React. It allows users to sign up, login, view movie details, book tickets, and manage their bookings. Additionally, administrators can manage movies, theaters, and user accounts.
 
+Prior to this we had worked on a common repo that has both client and server side code.[client-server-repo](https://github.com/dkiriinya/movie-ticketing-reviewing-system.git)
+
 To access the server side code, access through [server-side-github-repo](https://github.com/dkiriinya/movie-ticketing-reviewing-system-server.git)
+
+Using free render is a little bit of a challenge. Before going ahead with the installation kindly activate the server through this link.[server-link](https://movie-ticketing-reviewing-system-server.onrender.com/). wait up to 50 seconds for it to load. 
+
 
 ## Installation
 
