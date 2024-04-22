@@ -66,10 +66,6 @@ Upon successful login, users are redirected to their dashboard where they can vi
 
 Users can browse through a list of movies, view details, and book tickets for their preferred movies.
 
-### Admin Panel
-
-Administrators have access to an admin panel where they can manage movies, theaters, and user accounts.
-
 ## File Structure
 ```
 .
