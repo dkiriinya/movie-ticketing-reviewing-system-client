@@ -19,7 +19,7 @@ function App() {
   useEffect(() => {
     const fetchMovies = async () => {
         try {
-            const url = 'https://movie-ticketing-reviewing-system-server.onrender.com/movies';
+            const url = '/movies';
             const response = await fetch(url, {
                 headers: {
                   accept: 'application/json',

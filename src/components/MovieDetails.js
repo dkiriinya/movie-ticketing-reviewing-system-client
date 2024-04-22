@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 export default function MovieDetails({ user }) {
+    const history = useHistory()
     const { movieId } = useParams();
     const [movie, setMovie] = useState(null);
     const [tickets, setTickets] = useState([]);
@@ -95,6 +97,7 @@ export default function MovieDetails({ user }) {
                 alert("Review added successfully");
                 // Reset comment and rating inputs
                 getMovieReviews(movieId);
+                setUserReviews(formData)
                 setFormData({
                     ...formData,
                     rating: 0,
@@ -243,6 +246,7 @@ export default function MovieDetails({ user }) {
                     price: 0,
                     screen: ""
                 });
+                history.push('/dashboard')
             }else if (response.status === 401) {
                 // Handle validation errors
                 const responseData = await response.json();
